@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 
-namespace NoStressWedding.Models
-{
-    public class User
-    {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
-        public virtual ICollection<UserItemList> UserItemLists { get; set; }
+namespace NoStressWedding.Models {
+  public class User {
+    public int UserId { get; set; }
+    public string Name { get; set; }
+    public string LastName { get; set; }
+    public string Email { get; set; }
+    public virtual ICollection<UserItemList> UserItemLists { get; set; }
+  }
 
-    }
-
-    public class UserContext : System.Data.Entity.DbContext
-    {
-        public System.Data.Entity.DbSet<User> Users { get; set; }
-    }
+  public class UserContext: DbContext {
+    public DbSet<User> Users { get; set; }
+  }
 }

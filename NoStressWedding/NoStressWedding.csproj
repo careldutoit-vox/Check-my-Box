@@ -108,33 +108,8 @@
     <Compile Include="Areas\DBManagement\Controllers\AccomidationModelController.cs" />
     <Compile Include="Areas\Services\Controllers\MainController.cs" />
     <Compile Include="Areas\Services\ServicesAreaRegistration.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Areas\UserItems\UserItemsAreaRegistration.cs" />
     <Compile Include="Catalog\MainCatalog.cs" />
-    <Compile Include="Controllers\ItemController.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Controllers\ProductsController.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Controllers\RoleController.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Controllers\ServicesController.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Controllers\UserController.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Controllers\UserItemController.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Controllers\UserItemListController.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Controllers\UserRoleController.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -184,6 +159,7 @@
     <Content Include="Areas\Services\Views\Main\CheckList.cshtml" />
     <Content Include="Areas\Services\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Services\Views\Main\ListView.cshtml" />
+    <Content Include="Areas\UserItems\Views\Web.config" />
     <None Include="CodeTemplates\AddController\ControllerWithContext.t4" />
     <None Include="CodeTemplates\AddController\ControllerWithRepository.t4" />
     <None Include="CodeTemplates\AddModel\Repository.t4" />
@@ -355,6 +331,10 @@
     <Folder Include="Areas\DBManagement\Views\Shared\" />
     <Folder Include="Areas\Services\Models\" />
     <Folder Include="Areas\Services\Views\Shared\" />
+    <Folder Include="Areas\UserItems\Controllers\" />
+    <Folder Include="Areas\UserItems\Models\" />
+    <Folder Include="Areas\UserItems\Views\Shared\" />
+    <Folder Include="Controllers\" />
     <Folder Include="UI\Extentions\" />
   </ItemGroup>
   <ItemGroup>
