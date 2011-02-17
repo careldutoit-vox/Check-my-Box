@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+<configuration>
+    <system.data>        
+        <DbProviderFactories>
+            <remove invariant="System.Data.SqlServerCe.4.0" />
+            <add name="Microsoft SQL Server Compact Data Provider 4.0" invariant="System.Data.SqlServerCe.4.0" description=".NET Framework Data Provider for Microsoft SQL Server Compact" type="System.Data.SqlServerCe.SqlCeProviderFactory, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"/>
+        </DbProviderFactories>
+    </system.data>
+=======
+<configuration>
+    <system.data>        
+        <DbProviderFactories>
+            <remove invariant="System.Data.SqlServerCe.4.0" />
+            <add name="Microsoft SQL Server Compact Data Provider 4.0" invariant="System.Data.SqlServerCe.4.0" description=".NET Framework Data Provider for Microsoft SQL Server Compact" type="System.Data.SqlServerCe.SqlCeProviderFactory, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"/>
+        </DbProviderFactories>
+    </system.data>
+>>>>>>> 533e217c3f1d85b049f3a787e7029c40a8dbb016
+</configuration>
