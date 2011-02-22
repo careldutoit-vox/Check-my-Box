@@ -1,0 +1,12 @@
+@model NoStressWedding.Areas.DBManagement.Models.UserItem
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.ItemOrder)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.ItemOrder)
+    @Html.ValidationMessageFor(model => model.ItemOrder)
+</div>
+

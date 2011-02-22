@@ -1,0 +1,29 @@
+@model NoStressWedding.Areas.DBManagement.Models.UserItem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>UserItem</legend>
+
+    <div class="display-label">ItemValue</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.ItemValue).ToString()</div>
+
+    <div class="display-label">UserRoles</div>
+    <div class="display-field">@(Model.UserRoles == null ? "None" : Model.UserRoles.Count.ToString())</div>
+
+    <div class="display-label">ItemOrder</div>
+    <div class="display-field">@Model.ItemOrder</div>
+
+    <div class="display-label">UserItems</div>
+    <div class="display-field">@(Model.UserItems == null ? "None" : Model.UserItems.Count.ToString())</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.UserItemId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+
