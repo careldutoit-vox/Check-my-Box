@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoStressWedding", "NoStressWedding\NoStressWedding.csproj", "{286577AE-375D-4215-B16F-7E791023FE76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoStressWedding.Tests", "NoStressWedding.Tests\NoStressWedding.Tests.csproj", "{056C8057-BDDA-45BF-80BF-B18A15ECC6EC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Carel|Any CPU = Carel|Any CPU
@@ -18,12 +16,6 @@ Global
 		{286577AE-375D-4215-B16F-7E791023FE76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{286577AE-375D-4215-B16F-7E791023FE76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{286577AE-375D-4215-B16F-7E791023FE76}.Release|Any CPU.Build.0 = Release|Any CPU
-		{056C8057-BDDA-45BF-80BF-B18A15ECC6EC}.Carel|Any CPU.ActiveCfg = Carel|Any CPU
-		{056C8057-BDDA-45BF-80BF-B18A15ECC6EC}.Carel|Any CPU.Build.0 = Carel|Any CPU
-		{056C8057-BDDA-45BF-80BF-B18A15ECC6EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{056C8057-BDDA-45BF-80BF-B18A15ECC6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{056C8057-BDDA-45BF-80BF-B18A15ECC6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{056C8057-BDDA-45BF-80BF-B18A15ECC6EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
