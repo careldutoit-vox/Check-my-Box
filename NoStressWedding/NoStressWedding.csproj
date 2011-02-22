@@ -62,6 +62,7 @@
     <Reference Include="Ninject.MVC3">
       <HintPath>..\packages\Ninject.MVC3.0.3\lib\Ninject.MVC3.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Data.SqlServerCe.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -89,7 +90,7 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="WebActivator">
-      <HintPath>..\packages\WebActivator.1.0.0.0\lib\WebActivator.dll</HintPath>
+      <HintPath>..\packages\WebActivator.1.2.0.0\lib\NETFramework40\WebActivator.dll</HintPath>
     </Reference>
     <Reference Include="WebMatrix.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="WebMatrix.WebData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -98,6 +99,33 @@
     <Compile Include="AppStart_NinjectMVC3.cs" />
     <Compile Include="AppStart_SQLCEEntityFramework.cs" />
     <Compile Include="Areas\Accommodations\AccommodationsAreaRegistration.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\ItemTextController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\ItemValueController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\RoleController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\UserController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\UserItemController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\UserItemListController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\UserRoleController.cs" />
+    <Compile Include="Areas\DBManagement\Models\AccountModels.cs" />
+    <Compile Include="Areas\DBManagement\Models\Category.cs" />
+    <Compile Include="Areas\DBManagement\Models\CategoryAttribute.cs" />
+    <Compile Include="Areas\DBManagement\Models\CategoryAttributeValue.cs" />
+    <Compile Include="Areas\DBManagement\Models\Item.cs" />
+    <Compile Include="Areas\DBManagement\Models\ItemSearchable.cs" />
+    <Compile Include="Areas\DBManagement\Models\ItemSearchableValue.cs" />
+    <Compile Include="Areas\DBManagement\Models\ItemSelectable.cs" />
+    <Compile Include="Areas\DBManagement\Models\ItemSelectableValue.cs" />
+    <Compile Include="Areas\DBManagement\Models\ItemText.cs" />
+    <Compile Include="Areas\DBManagement\Models\ItemTextValue.cs" />
+    <Compile Include="Areas\DBManagement\Models\ItemValue.cs" />
+    <Compile Include="Areas\DBManagement\Models\NoStressWeddingContext.cs" />
+    <Compile Include="Areas\DBManagement\Models\Role.cs" />
+    <Compile Include="Areas\DBManagement\Models\SearchableElement.cs" />
+    <Compile Include="Areas\DBManagement\Models\User.cs" />
+    <Compile Include="Areas\DBManagement\Models\UserItem.cs" />
+    <Compile Include="Areas\DBManagement\Models\UserItemList.cs" />
+    <Compile Include="Areas\DBManagement\Models\UserRole.cs" />
+    <Compile Include="Areas\Services\Models\NoStressWeddingContext.cs" />
     <Compile Include="Areas\Services\Views\AccommodationsController.cs" />
     <Compile Include="Areas\Authentication\AuthenticationAreaRegistration.cs" />
     <Compile Include="Areas\DBManagement\Catalog\MainDBCatalog.cs" />
@@ -106,31 +134,10 @@
     <Compile Include="Areas\DBManagement\Models\AccomidationModel.cs" />
     <Compile Include="Areas\DBManagement\Controllers\AccomidationDetailModelController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\AccomidationModelController.cs" />
-    <Compile Include="Areas\Services\Controllers\MainController.cs" />
     <Compile Include="Areas\Services\ServicesAreaRegistration.cs" />
-    <Compile Include="Areas\UserItems\UserItemsAreaRegistration.cs" />
-    <Compile Include="Catalog\MainCatalog.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\CategoryAttribute.cs" />
-    <Compile Include="Models\CategoryAttributeValue.cs" />
-    <Compile Include="Models\ItemValue.cs" />
-    <Compile Include="Models\Item.cs" />
-    <Compile Include="Models\ItemSearchableValue.cs" />
-    <Compile Include="Models\ItemSelectable.cs" />
-    <Compile Include="Models\ItemSelectableValue.cs" />
-    <Compile Include="Models\ItemText.cs" />
-    <Compile Include="Models\ItemTextValue.cs" />
-    <Compile Include="Models\Role.cs" />
-    <Compile Include="Models\ItemSearchable.cs" />
-    <Compile Include="Models\SearchableElement.cs" />
-    <Compile Include="Models\User.cs" />
-    <Compile Include="Models\UserItem.cs" />
-    <Compile Include="Models\UserItemList.cs" />
-    <Compile Include="Models\UserRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\Helpers\HtmlHelperExtensions.cs" />
   </ItemGroup>
@@ -159,7 +166,49 @@
     <Content Include="Areas\Services\Views\Main\CheckList.cshtml" />
     <Content Include="Areas\Services\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Services\Views\Main\ListView.cshtml" />
-    <Content Include="Areas\UserItems\Views\Web.config" />
+    <Content Include="Areas\Services\Views\UserItemList\Index.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserItemList\Create.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserItemList\Edit.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserItemList\Delete.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserItemList\Details.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserItemList\Index.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserItemList\_CreateOrEdit.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserItem\Create.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserItem\Edit.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserItem\Delete.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserItem\Details.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserItem\Index.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserItem\_CreateOrEdit.cshtml" />
+    <Content Include="Areas\DBManagement\Views\User\Create.cshtml" />
+    <Content Include="Areas\DBManagement\Views\User\Edit.cshtml" />
+    <Content Include="Areas\DBManagement\Views\User\Delete.cshtml" />
+    <Content Include="Areas\DBManagement\Views\User\Details.cshtml" />
+    <Content Include="Areas\DBManagement\Views\User\Index.cshtml" />
+    <Content Include="Areas\DBManagement\Views\User\_CreateOrEdit.cshtml" />
+    <Content Include="Areas\DBManagement\Views\ItemText\Create.cshtml" />
+    <Content Include="Areas\DBManagement\Views\ItemText\Edit.cshtml" />
+    <Content Include="Areas\DBManagement\Views\ItemText\Delete.cshtml" />
+    <Content Include="Areas\DBManagement\Views\ItemText\Details.cshtml" />
+    <Content Include="Areas\DBManagement\Views\ItemText\Index.cshtml" />
+    <Content Include="Areas\DBManagement\Views\ItemText\_CreateOrEdit.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserRole\Create.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserRole\Edit.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserRole\Delete.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserRole\Details.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserRole\Index.cshtml" />
+    <Content Include="Areas\DBManagement\Views\UserRole\_CreateOrEdit.cshtml" />
+    <Content Include="Areas\DBManagement\Views\Role\Create.cshtml" />
+    <Content Include="Areas\DBManagement\Views\Role\Edit.cshtml" />
+    <Content Include="Areas\DBManagement\Views\Role\Delete.cshtml" />
+    <Content Include="Areas\DBManagement\Views\Role\Details.cshtml" />
+    <Content Include="Areas\DBManagement\Views\Role\Index.cshtml" />
+    <Content Include="Areas\DBManagement\Views\Role\_CreateOrEdit.cshtml" />
+    <Content Include="Areas\DBManagement\Views\ItemValue\Create.cshtml" />
+    <Content Include="Areas\DBManagement\Views\ItemValue\Edit.cshtml" />
+    <Content Include="Areas\DBManagement\Views\ItemValue\Delete.cshtml" />
+    <Content Include="Areas\DBManagement\Views\ItemValue\Details.cshtml" />
+    <Content Include="Areas\DBManagement\Views\ItemValue\Index.cshtml" />
+    <Content Include="Areas\DBManagement\Views\ItemValue\_CreateOrEdit.cshtml" />
     <None Include="CodeTemplates\AddController\ControllerWithContext.t4" />
     <None Include="CodeTemplates\AddController\ControllerWithRepository.t4" />
     <None Include="CodeTemplates\AddModel\Repository.t4" />
@@ -329,12 +378,11 @@
     <Folder Include="Areas\Authentication\Models\" />
     <Folder Include="Areas\Authentication\Views\Shared\" />
     <Folder Include="Areas\DBManagement\Views\Shared\" />
-    <Folder Include="Areas\Services\Models\" />
+    <Folder Include="Areas\Services\Controllers\" />
     <Folder Include="Areas\Services\Views\Shared\" />
-    <Folder Include="Areas\UserItems\Controllers\" />
-    <Folder Include="Areas\UserItems\Models\" />
-    <Folder Include="Areas\UserItems\Views\Shared\" />
+    <Folder Include="Catalog\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
     <Folder Include="UI\Extentions\" />
   </ItemGroup>
   <ItemGroup>

@@ -87,7 +87,9 @@
     <None Include="CodeTemplates\AddView\CSHTML\Edit.t4" />
     <None Include="CodeTemplates\AddView\CSHTML\Empty.t4" />
     <None Include="CodeTemplates\AddView\CSHTML\List.t4" />
-    <None Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

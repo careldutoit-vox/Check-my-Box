@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
-using NoStressWedding.Models;
 using System.ComponentModel;
 
 namespace NoStressWedding.Catalog
