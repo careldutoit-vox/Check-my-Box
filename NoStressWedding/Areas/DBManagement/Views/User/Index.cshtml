@@ -1,0 +1,53 @@
+@model IEnumerable<NoStressWedding.Areas.DBManagement.Models.User>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Name
+        </th>
+        <th>
+            LastName
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            UserItemLists
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.UserId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.UserId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.UserId })
+        </td>
+        <td>
+			@item.Name
+        </td>
+        <td>
+			@item.LastName
+        </td>
+        <td>
+			@item.Email
+        </td>
+        <td>
+			@(item.UserItemLists == null ? "None" : item.UserItemLists.Count.ToString())
+        </td>
+    </tr>
+}
+
+</table>
+
+

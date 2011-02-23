@@ -1,0 +1,26 @@
+@model NoStressWedding.Areas.DBManagement.Models.UserRole
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>UserRole</legend>
+
+    <div class="display-label">User</div>
+    <div class="display-field">@(Model.User == null ? "None" : Model.User.Name)</div>
+
+    <div class="display-label">Role</div>
+    <div class="display-field">@(Model.Role == null ? "None" : Model.Role.Name)</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+
