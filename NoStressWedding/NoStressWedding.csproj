@@ -100,7 +100,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppStart_NinjectMVC3.cs" />
-    <Compile Include="AppStart_SQLCEEntityFramework.cs" />
     <Compile Include="Areas\Accommodations\AccommodationsAreaRegistration.cs" />
     <Compile Include="Areas\DBManagement\Controllers\ItemTextController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\ItemValueController.cs" />
