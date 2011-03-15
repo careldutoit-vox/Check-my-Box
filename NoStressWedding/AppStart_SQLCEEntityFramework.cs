@@ -1,6 +1,8 @@
 using System.Data.Entity.Infrastructure;
 using NoStressWedding;
 using WebActivator;
+using System.Data.Entity.Database;
+using WebMatrix.Data;
 
 [assembly: PreApplicationStartMethod(typeof(AppStart_SQLCEEntityFramework), "Start")]
 

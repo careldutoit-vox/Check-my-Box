@@ -56,9 +56,6 @@
       <HintPath>..\packages\EFCodeFirst.0.8\lib\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Data.Entity.CTP">
-      <HintPath>..\packages\EFCTP4.1.0\lib\Microsoft.Data.Entity.CTP.dll</HintPath>
-    </Reference>
     <Reference Include="Ninject">
       <HintPath>..\packages\Ninject.2.1.0.76\lib\40\Ninject.dll</HintPath>
     </Reference>
@@ -66,7 +63,6 @@
       <HintPath>..\packages\Ninject.MVC3.0.3\lib\Ninject.MVC3.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Data.SqlServerCe.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -427,9 +423,6 @@
   </ProjectExtensions>
   <PropertyGroup>
     <PostBuildEvent>
-if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
-copy "$(SolutionDir)packages\SQLCE.4.0.8435.1\NativeBinaries\x86\*.dll" "$(TargetDir)x86"
-if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
-copy "$(SolutionDir)packages\SQLCE.4.0.8435.1\NativeBinaries\amd64\*.dll" "$(TargetDir)amd64</PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>

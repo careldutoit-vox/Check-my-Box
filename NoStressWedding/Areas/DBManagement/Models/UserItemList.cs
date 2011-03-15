@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-using Microsoft.Data.Entity.Ctp;
+//using Microsoft.Data.Entity.Ctp;
+using System.ComponentModel.DataAnnotations;
 
 namespace NoStressWedding.Areas.DBManagement.Models {
   public class UserItemList {
