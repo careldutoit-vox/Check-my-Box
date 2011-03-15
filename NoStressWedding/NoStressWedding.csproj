@@ -143,6 +143,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\Helpers\HtmlHelperExtensions.cs" />
   </ItemGroup>
@@ -350,7 +351,6 @@
     <Folder Include="Areas\DBManagement\Views\Shared\" />
     <Folder Include="Areas\Services\Views\Shared\" />
     <Folder Include="Catalog\" />
-    <Folder Include="Models\" />
     <Folder Include="UI\Extentions\" />
   </ItemGroup>
   <ItemGroup>
