@@ -123,6 +123,9 @@
     <Compile Include="Areas\DBManagement\Models\UserItem.cs" />
     <Compile Include="Areas\DBManagement\Models\UserItemList.cs" />
     <Compile Include="Areas\DBManagement\Models\UserRole.cs" />
+    <Compile Include="Areas\Services\Controllers\MainController.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Areas\Services\Models\NoStressWeddingContext.cs" />
     <Compile Include="Areas\Services\Views\AccommodationsController.cs" />
     <Compile Include="Areas\Authentication\AuthenticationAreaRegistration.cs" />
@@ -133,6 +136,10 @@
     <Compile Include="Areas\DBManagement\Controllers\AccomidationDetailModelController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\AccomidationModelController.cs" />
     <Compile Include="Areas\Services\ServicesAreaRegistration.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -322,42 +329,6 @@
     <Content Include="Views\Shared\_Layout_prog.cshtml" />
     <Content Include="Views\Shared\_Layout_earth.cshtml" />
     <Content Include="Views\Shared\_Layout_myown.cshtml" />
-    <Content Include="Views\User\Details.cshtml" />
-    <Content Include="Views\User\Edit.cshtml" />
-    <Content Include="Views\User\Create.cshtml" />
-    <Content Include="Views\User\Delete.cshtml" />
-    <Content Include="Views\User\Index.cshtml" />
-    <Content Include="Views\Role\Details.cshtml" />
-    <Content Include="Views\Role\Edit.cshtml" />
-    <Content Include="Views\Role\Create.cshtml" />
-    <Content Include="Views\Role\Delete.cshtml" />
-    <Content Include="Views\Role\Index.cshtml" />
-    <Content Include="Views\ItemList\Details.cshtml" />
-    <Content Include="Views\ItemList\Edit.cshtml" />
-    <Content Include="Views\ItemList\Create.cshtml" />
-    <Content Include="Views\ItemList\Delete.cshtml" />
-    <Content Include="Views\ItemList\Index.cshtml" />
-    <Content Include="Views\UserItemList\Details.cshtml" />
-    <Content Include="Views\UserItemList\Edit.cshtml" />
-    <Content Include="Views\UserItemList\Create.cshtml" />
-    <Content Include="Views\UserItemList\Delete.cshtml" />
-    <Content Include="Views\UserItemList\Index.cshtml" />
-    <Content Include="Views\Item\Details.cshtml" />
-    <Content Include="Views\Item\Edit.cshtml" />
-    <Content Include="Views\Item\Create.cshtml" />
-    <Content Include="Views\Item\Delete.cshtml" />
-    <Content Include="Views\Item\Index.cshtml" />
-    <Content Include="Views\UserItem\Details.cshtml" />
-    <Content Include="Views\UserItem\Edit.cshtml" />
-    <Content Include="Views\UserItem\Create.cshtml" />
-    <Content Include="Views\UserItem\Delete.cshtml" />
-    <Content Include="Views\UserItem\Index.cshtml" />
-    <Content Include="Views\UserRole\Details.cshtml" />
-    <Content Include="Views\UserRole\Edit.cshtml" />
-    <Content Include="Views\UserRole\Create.cshtml" />
-    <Content Include="Views\UserRole\Delete.cshtml" />
-    <Content Include="Views\UserRole\Index.cshtml" />
-    <Content Include="Views\UserItemList\Test.cshtml" />
     <Content Include="Areas\DBManagement\Views\AccomidationModel\Edit.cshtml" />
     <Content Include="Areas\DBManagement\Views\AccomidationModel\Create.cshtml" />
     <Content Include="Areas\DBManagement\Views\AccomidationModel\Delete.cshtml" />
@@ -377,10 +348,8 @@
     <Folder Include="Areas\Authentication\Models\" />
     <Folder Include="Areas\Authentication\Views\Shared\" />
     <Folder Include="Areas\DBManagement\Views\Shared\" />
-    <Folder Include="Areas\Services\Controllers\" />
     <Folder Include="Areas\Services\Views\Shared\" />
     <Folder Include="Catalog\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="UI\Extentions\" />
   </ItemGroup>

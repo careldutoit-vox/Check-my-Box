@@ -4,42 +4,38 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-
-namespace NoStressWedding.Areas.Services.Controllers {
-  [Authorize]
-  public class MainController : Controller {
+namespace NoStressWedding.Controllers {
+  public class ServicesController : Controller {
     //
-    // GET: /Services/Main/
-    public ActionResult Main() {
+    // GET: /Services/
+    [Authorize]
+    public ActionResult Index() {
       return View();
     }
-    public ActionResult CheckList() {
-      //MainCatalog mainCatalog = new MainCatalog();
 
-      return View();//mainCatalog);
+    public ActionResult Wedding() {
+      return View();
     }
 
-    public ActionResult ListView() {
-      //MainCatalog mainCatalog = new MainCatalog();
-
-      return View();//mainCatalog);
+    public ActionResult Travel() {
+      return View();
     }
     //
-    // GET: /Services/Main/Details/5
+    // GET: /Services/Details/5
 
     public ActionResult Details(int id) {
       return View();
     }
 
     //
-    // GET: /Services/Main/Create
+    // GET: /Services/Create
 
     public ActionResult Create() {
       return View();
     }
 
     //
-    // POST: /Services/Main/Create
+    // POST: /Services/Create
 
     [HttpPost]
     public ActionResult Create(FormCollection collection) {
@@ -53,14 +49,14 @@ namespace NoStressWedding.Areas.Services.Controllers {
     }
 
     //
-    // GET: /Services/Main/Edit/5
+    // GET: /Services/Edit/5
 
     public ActionResult Edit(int id) {
       return View();
     }
 
     //
-    // POST: /Services/Main/Edit/5
+    // POST: /Services/Edit/5
 
     [HttpPost]
     public ActionResult Edit(int id, FormCollection collection) {
@@ -74,14 +70,14 @@ namespace NoStressWedding.Areas.Services.Controllers {
     }
 
     //
-    // GET: /Services/Main/Delete/5
+    // GET: /Services/Delete/5
 
     public ActionResult Delete(int id) {
       return View();
     }
 
     //
-    // POST: /Services/Main/Delete/5
+    // POST: /Services/Delete/5
 
     [HttpPost]
     public ActionResult Delete(int id, FormCollection collection) {
