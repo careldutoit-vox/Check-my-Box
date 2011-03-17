@@ -136,14 +136,14 @@
     <Compile Include="Areas\DBManagement\Controllers\AccomidationDetailModelController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\AccomidationModelController.cs" />
     <Compile Include="Areas\Services\ServicesAreaRegistration.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Areas\Authentication\Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Areas\Authentication\Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\Helpers\HtmlHelperExtensions.cs" />
   </ItemGroup>
@@ -215,6 +215,7 @@
     <Content Include="Areas\DBManagement\Views\ItemValue\Details.cshtml" />
     <Content Include="Areas\DBManagement\Views\ItemValue\Index.cshtml" />
     <Content Include="Areas\DBManagement\Views\ItemValue\_CreateOrEdit.cshtml" />
+    <Content Include="Areas\Authentication\Views\_ViewStart.cshtml" />
     <None Include="CodeTemplates\AddController\ControllerWithContext.t4" />
     <None Include="CodeTemplates\AddController\ControllerWithRepository.t4" />
     <None Include="CodeTemplates\AddModel\Repository.t4" />
@@ -314,10 +315,10 @@
     <Content Include="Scripts\MicrosoftMvcValidation.js" />
     <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Account\ChangePassword.cshtml" />
-    <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
-    <Content Include="Views\Account\LogOn.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Areas\Authentication\Views\Account\ChangePassword.cshtml" />
+    <Content Include="Areas\Authentication\Views\Account\ChangePasswordSuccess.cshtml" />
+    <Content Include="Areas\Authentication\Views\Account\LogOn.cshtml" />
+    <Content Include="Areas\Authentication\Views\Account\Register.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
@@ -345,12 +346,11 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Accommodations\Controllers\" />
     <Folder Include="Areas\Accommodations\Views\Shared\" />
-    <Folder Include="Areas\Authentication\Controllers\" />
-    <Folder Include="Areas\Authentication\Models\" />
     <Folder Include="Areas\Authentication\Views\Shared\" />
     <Folder Include="Areas\DBManagement\Views\Shared\" />
     <Folder Include="Areas\Services\Views\Shared\" />
     <Folder Include="Catalog\" />
+    <Folder Include="Models\" />
     <Folder Include="UI\Extentions\" />
   </ItemGroup>
   <ItemGroup>

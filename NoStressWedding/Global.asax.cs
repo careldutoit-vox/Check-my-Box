@@ -29,7 +29,10 @@ namespace NoStressWedding {
       routes.MapRoute("DBmodels_Accomodation", "DBManagement/{controller}/{action}",
           new { controller = "", action = ""}
       );
-     
+
+      routes.MapRoute("Authentication", "Authentication/{controller}/{action}",
+         new { controller = "", action = "" }
+     );
       #endregion
     }
 
