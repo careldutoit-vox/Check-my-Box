@@ -41,7 +41,7 @@ namespace NoStressWedding.Areas.Authentication.Controllers {
           if (Url.IsLocalUrl(returnUrl)) {
             return Redirect(returnUrl);
           } else {
-            return RedirectToAction("Index", "Home", new { Areas = "" });
+            return RedirectToAction("Index", "Home", new { area = "" });
           }
         } else {
           ModelState.AddModelError("", "The user name or password provided is incorrect.");
@@ -59,7 +59,7 @@ namespace NoStressWedding.Areas.Authentication.Controllers {
     public ActionResult LogOff() {
       FormsService.SignOut();
 
-      return RedirectToAction("Index", "Home", new { Areas = "" });
+      return RedirectToAction("Index", "Home", new { area = "" });
     }
 
     // **************************************
@@ -79,7 +79,7 @@ namespace NoStressWedding.Areas.Authentication.Controllers {
 
         if (createStatus == MembershipCreateStatus.Success) {
           FormsService.SignIn(model.UserName, false /* createPersistentCookie */);
-          return RedirectToAction("Index", "Home");
+          return RedirectToAction("Index", "Home", new { area = "" });
         } else {
           ModelState.AddModelError("", AccountValidation.ErrorCodeToString(createStatus));
         }

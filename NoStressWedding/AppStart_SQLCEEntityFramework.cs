@@ -4,6 +4,7 @@ using WebActivator;
 using System.Data.Entity.Database;
 using WebMatrix.Data;
 
+
 [assembly: PreApplicationStartMethod(typeof(AppStart_SQLCEEntityFramework), "Start")]
 
 namespace NoStressWedding {
