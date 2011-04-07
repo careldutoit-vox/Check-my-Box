@@ -1,0 +1,23 @@
+@model NoStressWedding.Areas.DBManagement.Models.UserRole
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>UserRole</legend>
+
+    <div class="display-label">User</div>
+    <div class="display-field">@(Model.User == null ? "None" : Model.User.Name)</div>
+
+    <div class="display-label">Role</div>
+    <div class="display-field">@(Model.Role == null ? "None" : Model.Role.Name)</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.UserRoleId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+
