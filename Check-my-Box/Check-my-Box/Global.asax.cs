@@ -27,7 +27,7 @@ namespace Check_my_Box {
 			// Routing config for the Retentions area
 			//routes.CreateArea("HelpDesk", "ProjectName.Areas.HelpDesk.Controllers",
 			//DB Area
-			routes.MapRoute("DBmodels_Accomodation", "DBManagement/{controller}/{action}",
+			routes.MapRoute("DBManagement", "DBManagement/{controller}/{action}",
 				new {
 					controller = "",
 					action = ""

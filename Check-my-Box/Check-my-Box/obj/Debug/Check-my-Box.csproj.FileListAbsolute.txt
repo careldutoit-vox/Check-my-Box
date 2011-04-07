@@ -1,1 +1,8 @@
 C:\Development\Personal\Check-my-Box2\Check-my-Box\Check-my-Box\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Personal\Check-my-Box2 - Copy\Check-my-Box\Check-my-Box\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Personal\Check-my-Box2 - Copy\Check-my-Box\Check-my-Box\bin\Check-my-Box.dll
+C:\Development\Personal\Check-my-Box2 - Copy\Check-my-Box\Check-my-Box\bin\Check-my-Box.pdb
+C:\Development\Personal\Check-my-Box2 - Copy\Check-my-Box\Check-my-Box\bin\EntityFramework.dll
+C:\Development\Personal\Check-my-Box2 - Copy\Check-my-Box\Check-my-Box\bin\EntityFramework.xml
+C:\Development\Personal\Check-my-Box2 - Copy\Check-my-Box\Check-my-Box\obj\Debug\Check-my-Box.dll
+C:\Development\Personal\Check-my-Box2 - Copy\Check-my-Box\Check-my-Box\obj\Debug\Check-my-Box.pdb

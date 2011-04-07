@@ -5,6 +5,7 @@ using System.Web;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.ComponentModel;
+using NoStressWedding.Areas.DBManagement.Models;
 
 namespace NoStressWedding.Catalog
 {
