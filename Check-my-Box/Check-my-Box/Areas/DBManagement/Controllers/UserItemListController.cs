@@ -28,6 +28,25 @@ namespace Check_my_Box.Areas.DBManagement.Controllers
 					return View(useritemlist);
 				}
 
+				//
+				// POST: /UserItemList/Test/5
+
+				[HttpPost]
+				public ActionResult Test(UserItemList useritemlist,
+					[Bind(Prefix = "UserItemList.UserItems")] UserItem[] userItems)
+ {
+					if (ModelState.IsValid) {
+
+						useritemlist.UserOwner = context.UserItemLists.Single(x => x.UserItemListId == useritemlist.UserId).UserOwner;
+
+						useritemlist.UserItems = null;
+						context.Entry(useritemlist).State = EntityState.Modified;
+						context.SaveChanges();
+						return RedirectToAction("Index");
+					}
+					ViewBag.PossibleUsers = context.Users;
+					return View(useritemlist);
+				}
 
         //
         // GET: /UserItemList/Details/5

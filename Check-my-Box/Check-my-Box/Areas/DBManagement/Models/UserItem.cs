@@ -9,11 +9,12 @@ namespace Check_my_Box.Areas.DBManagement.Models {
 		public int UserItemId { get; set; }
 
 		public int ItemValueId { get; set; }
+
 		[ForeignKey("ItemValueId")]
 		public virtual ItemValue ItemValue { get; set; }
 
 	//	public virtual ICollection<UserRole> UserRoles { get; set; }
 		public int ItemOrder { get; set; }
-		public virtual ICollection<UserItem> UserItems { get; set; } /*This is list of Alltems on th list*/
+	
 	}
 }

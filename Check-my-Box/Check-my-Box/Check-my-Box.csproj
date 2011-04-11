@@ -271,10 +271,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\DisplayTemplates\UserItem.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\ItemSearchableValueView.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\ItemSelectableValueView.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\ItemValue.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\TextBoxValueView.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\UserItem.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\UserItems.cshtml" />
   </ItemGroup>
@@ -313,6 +310,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\DBManagement\Views\ItemTextValue\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\EditorTemplates\ItemTextValue.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\EditorTemplates\ItemSelectableValue.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\EditorTemplates\ItemSearchableValue.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -1,5 +1,4 @@
-﻿@model NoStressWedding.Models.UserItemList
-
+﻿@model Check_my_Box.Areas.DBManagement.Models.UserItemList
 @{
     ViewBag.Title = "Test";
 	}
@@ -7,7 +6,8 @@
 <h2>My CheckList</h2>
     @using (Html.BeginForm()) {
         @Html.ValidationSummary(true)
-        
+         @Html.HiddenFor(model => model.UserItemListId)
+          @Html.HiddenFor(model => model.UserId)
         <fieldset>
             <legend>Wedding CheckList</legend>
             
@@ -15,20 +15,12 @@
                Owner
             </div>
             <div class="editor-field">
-                @Html.ValidationMessageFor(model => model.UserItemListId)
+                @Html.LabelFor(model => model.UserOwner.Name)
             </div>
              
-  
-             <div class="editor-label">K
-               @Html.LabelFor(model => model.UserItems)
-            </div>
 
-            <div class="editor-field">S
+            <div class="editor-field">
                 @Html.EditorFor(model => model.UserItems)
-            </div>
-            <div class="editor-field">L
-                @Html.EditorFor(model => model.UserItemListId)
-                @Html.ValidationMessageFor(model => model.UserItemListId)
             </div>
             <p>
                 <input type="submit" value="Save" />

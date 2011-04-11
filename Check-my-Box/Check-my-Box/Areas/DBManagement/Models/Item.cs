@@ -5,7 +5,4 @@
 		public string ItemName { get; set; }
 	}
 
-	/*  public class ItemContext : DbContext {
-     public DbSet<Item> Items { get; set; }
-    }*/
 }
