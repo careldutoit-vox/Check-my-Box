@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace NoStressWedding.Areas.Accommodations.Controllers {
+namespace Check_my_Box.Areas.Accommodations.Controllers {
 	public class AccommodationsController: Controller {
 		public ActionResult Accommodation() {
 			return View();

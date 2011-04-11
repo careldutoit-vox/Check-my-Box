@@ -5,14 +5,14 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using NoStressWedding.Areas.DBManagement.Models;
 using Check_my_Box.Areas.DBManagement.Models;
+using Check_my_Box.Areas.DBManagement.Catalog;
 
 namespace Check_my_Box.Areas.DBManagement.Controllers
 {   
     public class UserController : Controller
     {
-        private CheckmyBoxContext context = new CheckmyBoxContext();
+        private MainDBCatalog context = new MainDBCatalog();
 
         //
         // GET: /User/

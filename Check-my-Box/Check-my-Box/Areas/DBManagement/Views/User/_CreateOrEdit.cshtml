@@ -1,4 +1,4 @@
-@model NoStressWedding.Areas.DBManagement.Models.User
+@model Check_my_Box.Areas.DBManagement.Models.User
 
 @* This partial view defines form fields that will appear when creating and editing entities *@
 
@@ -24,5 +24,13 @@
 <div class="editor-field">
     @Html.EditorFor(model => model.Email)
     @Html.ValidationMessageFor(model => model.Email)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.TelephoneNumber)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.TelephoneNumber)
+    @Html.ValidationMessageFor(model => model.TelephoneNumber)
 </div>
 

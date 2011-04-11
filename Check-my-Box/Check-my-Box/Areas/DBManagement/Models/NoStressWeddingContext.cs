@@ -1,7 +1,7 @@
 using System.Data.Entity;
 
-namespace NoStressWedding.Areas.DBManagement.Models {
-	public class NoStressWeddingContext: DbContext {
+namespace Check_my_Box.Areas.DBManagement.Models {
+	public class Check_my_BoxContext: DbContext {
 		public DbSet<ItemValue> ItemValues { get; set; }
 
 		public DbSet<Role> Roles { get; set; }

@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace NoStressWedding.Areas.Authentication.Models {
+namespace Check_my_Box.Areas.Authentication.Models {
 	#region Models
 	public class ChangePasswordModel {
 		[Required]

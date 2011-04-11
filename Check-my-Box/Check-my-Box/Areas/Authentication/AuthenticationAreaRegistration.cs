@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace NoStressWedding.Areas.Authentication {
+namespace Check_my_Box.Areas.Authentication {
 	public class AuthenticationAreaRegistration: AreaRegistration {
 		public override string AreaName {
 			get { return "Authentication"; }

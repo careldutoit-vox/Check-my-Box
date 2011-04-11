@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace NoStressWedding.Areas.DBManagement {
+namespace Check_my_Box.Areas.DBManagement {
 	public class DBManagementAreaRegistration: AreaRegistration {
 		public override string AreaName {
 			get { return "DBManagement"; }

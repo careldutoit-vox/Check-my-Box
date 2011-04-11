@@ -1,4 +1,4 @@
-@model NoStressWedding.Areas.DBManagement.Models.User
+@model Check_my_Box.Areas.DBManagement.Models.User
 
 @{
     ViewBag.Title = "Delete";
@@ -18,6 +18,9 @@
 
     <div class="display-label">Email</div>
     <div class="display-field">@Model.Email</div>
+
+    <div class="display-label">TelephoneNumber</div>
+    <div class="display-field">@Model.TelephoneNumber</div>
 
     <div class="display-label">UserItemLists</div>
     <div class="display-field">@(Model.UserItemLists == null ? "None" : Model.UserItemLists.Count.ToString())</div>

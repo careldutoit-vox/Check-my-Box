@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace NoStressWedding.Areas.Accommodations {
+namespace Check_my_Box.Areas.Accommodations {
 	public class AccommodationsAreaRegistration: AreaRegistration {
 		public override string AreaName {
 			get { return "Accommodations"; }

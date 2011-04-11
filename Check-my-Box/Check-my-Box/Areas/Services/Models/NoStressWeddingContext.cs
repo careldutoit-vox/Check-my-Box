@@ -1,8 +1,8 @@
 using System.Data.Entity;
-using NoStressWedding.Areas.DBManagement.Models;
+using Check_my_Box.Areas.DBManagement.Models;
 
-namespace NoStressWedding.Areas.Services.Models {
-	public class NoStressWeddingContext: DbContext {
+namespace Check_my_Box.Areas.Services.Models {
+	public class Check_my_BoxContext: DbContext {
 		public DbSet<UserItemList> UserItemLists { get; set; }
 
 		public DbSet<UserItem> UserItems { get; set; }

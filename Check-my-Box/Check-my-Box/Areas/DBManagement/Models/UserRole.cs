@@ -1,4 +1,4 @@
-﻿namespace NoStressWedding.Areas.DBManagement.Models {
+﻿namespace Check_my_Box.Areas.DBManagement.Models {
 	public class UserRole {
 		public int UserRoleId { get; set; }
 		public int UserId { get; set; }

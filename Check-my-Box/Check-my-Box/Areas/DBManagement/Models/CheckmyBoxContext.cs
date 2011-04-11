@@ -19,6 +19,8 @@ namespace Check_my_Box.Areas.DBManagement.Models
 			//    Database.SetInitializer(new DropCreateDatabaseIfModelChanges<CheckmyBoxContext>());
         }
 
-				public DbSet<NoStressWedding.Areas.DBManagement.Models.User> Users { get; set; }
+				public DbSet<Check_my_Box.Areas.DBManagement.Models.User> Users { get; set; }
+
+				public DbSet<Check_my_Box.Areas.DBManagement.Models.ItemValue> ItemValues { get; set; }
     }
 }

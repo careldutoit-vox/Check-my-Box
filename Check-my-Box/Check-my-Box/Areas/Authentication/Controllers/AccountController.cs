@@ -1,9 +1,9 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
-using NoStressWedding.Areas.Authentication.Models;
+using Check_my_Box.Areas.Authentication.Models;
 
-namespace NoStressWedding.Areas.Authentication.Controllers {
+namespace Check_my_Box.Areas.Authentication.Controllers {
 	public class AccountController: Controller {
 		public IFormsAuthenticationService FormsService { get; set; }
 		public IMembershipService MembershipService { get; set; }

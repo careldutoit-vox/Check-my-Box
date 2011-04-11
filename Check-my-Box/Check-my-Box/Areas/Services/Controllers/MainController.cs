@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace NoStressWedding.Areas.Services.Controllers {
+namespace Check_my_Box.Areas.Services.Controllers {
 	[Authorize]
 	public class MainController: Controller {
 		//

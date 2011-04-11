@@ -1,4 +1,4 @@
-@model IEnumerable<NoStressWedding.Areas.DBManagement.Models.User>
+@model IEnumerable<Check_my_Box.Areas.DBManagement.Models.User>
 
 @{
     ViewBag.Title = "Index";
@@ -22,6 +22,9 @@
             Email
         </th>
         <th>
+            TelephoneNumber
+        </th>
+        <th>
             UserItemLists
         </th>
     </tr>
@@ -41,6 +44,9 @@
         </td>
         <td>
 			@item.Email
+        </td>
+        <td>
+			@item.TelephoneNumber
         </td>
         <td>
 			@(item.UserItemLists == null ? "None" : item.UserItemLists.Count.ToString())

@@ -68,7 +68,12 @@
     <Compile Include="Areas\DBManagement\Catalog\MainDBCatalog.cs" />
     <Compile Include="Areas\DBManagement\Controllers\AccomidationDetailModelController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\AccomidationModelController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\ItemController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\ItemTextController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\ItemTextValueController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\ItemValueController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\UserController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\UserItemListController.cs" />
     <Compile Include="Areas\DBManagement\DBManagementAreaRegistration.cs" />
     <Compile Include="Areas\DBManagement\Models\AccomidationDetailModel.cs" />
     <Compile Include="Areas\DBManagement\Models\AccomidationModel.cs" />
@@ -118,6 +123,7 @@
     <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="InstallationDummyFile.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -189,6 +195,24 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemValue\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemValue\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemValue\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemValue\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemValue\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemValue\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Areas\DBManagement\Views\User\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -205,6 +229,90 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\DBManagement\Views\User\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemText\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemText\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemText\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemText\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemText\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemText\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\Item\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\Item\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\Item\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\Item\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\Item\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\Item\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\UserItemList\Test.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\DisplayTemplates\UserItem.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\ItemSearchableValueView.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\ItemSelectableValueView.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\ItemValue.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\TextBoxValueView.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\UserItem.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\UserItems.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\UserItemList\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\UserItemList\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\UserItemList\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\UserItemList\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\UserItemList\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\UserItemList\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemTextValue\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemTextValue\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemTextValue\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemTextValue\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemTextValue\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemTextValue\_CreateOrEdit.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
