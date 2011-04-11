@@ -8,7 +8,7 @@ namespace Check_my_Box.Areas.DBManagement.Catalog {
 
 		public DbSet<AccomidationModel> AccomidationModels { get; set; }
 		public DbSet<AccomidationDetailModel> AccomidationDetailModels { get; set; }
-		public DbSet<Category> Categorys { get; set; }
+		public DbSet<Category> Categories { get; set; }
 		public DbSet<CategoryAttribute> CategoryAttributes { get; set; }
 		public DbSet<CategoryAttributeValue> CategoryAttributeValues { get; set; }
 		public DbSet<Item> Items { get; set; }
@@ -53,6 +53,7 @@ namespace Check_my_Box.Areas.DBManagement.Catalog {
 	//	.Map<Item>(m => m.Requires("Type").HasValue("Current"))
 		//.Map<ItemSearchable>(m => m.Requires("Type").HasValue("Old")); 
 		}
+
 
 		/*
 		

@@ -65,13 +65,21 @@
     <Compile Include="Areas\Authentication\AuthenticationAreaRegistration.cs" />
     <Compile Include="Areas\Authentication\Controllers\AccountController.cs" />
     <Compile Include="Areas\Authentication\Models\AccountModels.cs" />
+    <Compile Include="Areas\DBManagement\Catalog\MainDBContextInitializer.cs" />
     <Compile Include="Areas\DBManagement\Catalog\MainDBCatalog.cs" />
     <Compile Include="Areas\DBManagement\Controllers\AccomidationDetailModelController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\AccomidationModelController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\CategoryAttributeController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\CategoryController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\ItemController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\ItemSearchableController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\ItemSearchableValueController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\ItemSelectableController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\ItemSelectableValueController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\ItemTextController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\ItemTextValueController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\ItemValueController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\SeacrhableElementController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\UserController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\UserItemListController.cs" />
     <Compile Include="Areas\DBManagement\DBManagementAreaRegistration.cs" />
@@ -81,7 +89,6 @@
     <Compile Include="Areas\DBManagement\Models\Category.cs" />
     <Compile Include="Areas\DBManagement\Models\CategoryAttribute.cs" />
     <Compile Include="Areas\DBManagement\Models\CategoryAttributeValue.cs" />
-    <Compile Include="Areas\DBManagement\Models\CheckmyBoxContext.cs" />
     <Compile Include="Areas\DBManagement\Models\Item.cs" />
     <Compile Include="Areas\DBManagement\Models\ItemSearchable.cs" />
     <Compile Include="Areas\DBManagement\Models\ItemSearchableValue.cs" />
@@ -90,7 +97,6 @@
     <Compile Include="Areas\DBManagement\Models\ItemText.cs" />
     <Compile Include="Areas\DBManagement\Models\ItemTextValue.cs" />
     <Compile Include="Areas\DBManagement\Models\ItemValue.cs" />
-    <Compile Include="Areas\DBManagement\Models\NoStressWeddingContext.cs" />
     <Compile Include="Areas\DBManagement\Models\Role.cs" />
     <Compile Include="Areas\DBManagement\Models\SearchableElement.cs" />
     <Compile Include="Areas\DBManagement\Models\User.cs" />
@@ -317,6 +323,132 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\EditorTemplates\ItemSearchableValue.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSelectableValue\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSelectableValue\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSelectableValue\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSelectableValue\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSelectableValue\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSelectableValue\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSelectable\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSelectable\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSelectable\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSelectable\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSelectable\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSelectable\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\SeacrhableElement\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\SeacrhableElement\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\SeacrhableElement\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\SeacrhableElement\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\SeacrhableElement\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\SeacrhableElement\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSearchable\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSearchable\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSearchable\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSearchable\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSearchable\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSearchable\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\Category\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\Category\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\Category\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\Category\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\Category\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\Category\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\CategoryAttribute\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\CategoryAttribute\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\CategoryAttribute\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\CategoryAttribute\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\CategoryAttribute\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\CategoryAttribute\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSearchableValue\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSearchableValue\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSearchableValue\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSearchableValue\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSearchableValue\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\ItemSearchableValue\_CreateOrEdit.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

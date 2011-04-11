@@ -50,6 +50,8 @@ namespace Check_my_Box {
 
 			RegisterGlobalFilters(GlobalFilters.Filters);
 			RegisterRoutes(RouteTable.Routes);
+
+			System.Data.Entity.Database.SetInitializer(new MainDBContextInitializer());
 		}
 	}
 }
