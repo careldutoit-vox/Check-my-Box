@@ -1,0 +1,20 @@
+﻿@model NoStressWedding.Models.UserItem
+
+                    <tr>
+                        <td>K
+                            
+                            @if (Model.ItemValue is NoStressWedding.Models.ItemTextValue) {
+                                <text>ItemTextBox
+                                </text>
+                               // @Html.EditorFor(model => Model.ItemValue, (NoStressWedding.Models.ItemTextValue)(item.ItemValue));
+                             // @Html.RenderPartial"TextBoxValueView",   new ViewData(new {Key = "Some value"})  (NoStressWedding.Models.ItemTextValue)(item.ItemValue) );
+                            } else if (Model.ItemValue is NoStressWedding.Models.ItemSearchableValue) {
+                               //@Html.RenderPartial("ItemSearchableValueView",  (NoStressWedding.Models.ItemSearchableValue)(item.ItemValue) );
+                            } else if (Model.ItemValue is NoStressWedding.Models.ItemSelectableValue) {
+                                //@Html.RenderPartial("ItemSelectableValueView",  (((NoStressWedding.Models.ItemSelectableValue)(item.ItemValue)))); 
+                            }
+                        </td>
+                         <td>OK
+                        </td>
+                    </tr>
+              

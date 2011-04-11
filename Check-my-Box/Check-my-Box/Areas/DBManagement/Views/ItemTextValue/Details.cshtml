@@ -1,0 +1,23 @@
+@model Check_my_Box.Areas.DBManagement.Models.ItemTextValue
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ItemTextValue</legend>
+
+    <div class="display-label">TextValue</div>
+    <div class="display-field">@Model.TextValue</div>
+
+    <div class="display-label">ItemText</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.ItemText).ToString()</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ItemValueId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

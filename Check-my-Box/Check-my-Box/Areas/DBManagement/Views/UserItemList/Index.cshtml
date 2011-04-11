@@ -1,0 +1,41 @@
+@model IEnumerable<Check_my_Box.Areas.DBManagement.Models.UserItemList>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            UserOwner
+        </th>
+        <th>
+            UserItems
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.UserItemListId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.UserItemListId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.UserItemListId })
+        </td>
+        <td>
+			@(item.UserOwner == null ? "None" : item.UserOwner.Name)
+        </td>
+        <td>
+			@(item.UserItems == null ? "None" : item.UserItems.Count.ToString())
+        </td>
+    </tr>
+}
+
+</table>
+
+

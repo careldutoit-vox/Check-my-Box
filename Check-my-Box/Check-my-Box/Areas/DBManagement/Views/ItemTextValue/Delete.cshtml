@@ -1,0 +1,26 @@
+@model Check_my_Box.Areas.DBManagement.Models.ItemTextValue
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>ItemTextValue</legend>
+
+    <div class="display-label">TextValue</div>
+    <div class="display-field">@Model.TextValue</div>
+
+    <div class="display-label">ItemText</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.ItemText).ToString()</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

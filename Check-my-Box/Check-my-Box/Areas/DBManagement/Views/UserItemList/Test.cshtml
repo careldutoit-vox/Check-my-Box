@@ -1,0 +1,45 @@
+﻿@model NoStressWedding.Models.UserItemList
+
+@{
+    ViewBag.Title = "Test";
+	}
+
+<h2>My CheckList</h2>
+    @using (Html.BeginForm()) {
+        @Html.ValidationSummary(true)
+        
+        <fieldset>
+            <legend>Wedding CheckList</legend>
+            
+            <div class="editor-label">
+               Owner
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(model => model.UserItemListId)
+            </div>
+             
+  
+             <div class="editor-label">K
+               @Html.LabelFor(model => model.UserItems)
+            </div>
+
+            <div class="editor-field">S
+                @Html.EditorFor(model => model.UserItems)
+            </div>
+            <div class="editor-field">L
+                @Html.EditorFor(model => model.UserItemListId)
+                @Html.ValidationMessageFor(model => model.UserItemListId)
+            </div>
+            <p>
+                <input type="submit" value="Save" />
+            </p>
+        </fieldset>
+
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+
+

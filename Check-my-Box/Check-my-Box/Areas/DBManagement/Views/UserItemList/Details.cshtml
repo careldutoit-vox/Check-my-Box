@@ -1,0 +1,23 @@
+@model Check_my_Box.Areas.DBManagement.Models.UserItemList
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>UserItemList</legend>
+
+    <div class="display-label">UserOwner</div>
+    <div class="display-field">@(Model.UserOwner == null ? "None" : Model.UserOwner.Name)</div>
+
+    <div class="display-label">UserItems</div>
+    <div class="display-field">@(Model.UserItems == null ? "None" : Model.UserItems.Count.ToString())</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.UserItemListId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+
