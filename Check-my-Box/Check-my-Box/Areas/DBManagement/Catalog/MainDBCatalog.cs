@@ -5,6 +5,7 @@ namespace Check_my_Box.Areas.DBManagement.Catalog {
 
 
 	public class MainDBCatalog: DbContext {
+
 		public DbSet<AccomidationModel> AccomidationModels { get; set; }
 		public DbSet<AccomidationDetailModel> AccomidationDetailModels { get; set; }
 		public DbSet<Category> Categorys { get; set; }
@@ -27,6 +28,8 @@ namespace Check_my_Box.Areas.DBManagement.Catalog {
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder) {
 
+
+		
 			modelBuilder.Entity<Item>().ToTable("Items");
 			modelBuilder.Entity<ItemSearchable>().ToTable("ItemSearchables");
 

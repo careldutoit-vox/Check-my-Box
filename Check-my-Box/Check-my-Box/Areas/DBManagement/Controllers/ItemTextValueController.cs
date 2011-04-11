@@ -19,7 +19,7 @@ namespace Check_my_Box.Areas.DBManagement.Controllers
 
         public ViewResult Index()
         {
-            return View(context.ItemTextValues.ToList());
+            return View(context.ItemTextValues.Include(itemtextvalue => itemtextvalue.ItemText).ToList());
         }
 
         //
@@ -36,6 +36,7 @@ namespace Check_my_Box.Areas.DBManagement.Controllers
 
         public ActionResult Create()
         {
+			ViewBag.PossibleItemTexts = context.ItemTexts;
             return View();
         } 
 
@@ -52,6 +53,7 @@ namespace Check_my_Box.Areas.DBManagement.Controllers
 				return RedirectToAction("Index");  
             }
 
+			ViewBag.PossibleItemTexts = context.ItemTexts;
             return View(itemtextvalue);
         }
         
@@ -61,6 +63,7 @@ namespace Check_my_Box.Areas.DBManagement.Controllers
         public ActionResult Edit(int id)
         {
 			ItemTextValue itemtextvalue = context.ItemTextValues.Single(x => x.ItemValueId == id);
+			ViewBag.PossibleItemTexts = context.ItemTexts;
 			return View(itemtextvalue);
         }
 
@@ -76,6 +79,7 @@ namespace Check_my_Box.Areas.DBManagement.Controllers
                 context.SaveChanges();
                 return RedirectToAction("Index");
             }
+			ViewBag.PossibleItemTexts = context.ItemTexts;
             return View(itemtextvalue);
         }
 

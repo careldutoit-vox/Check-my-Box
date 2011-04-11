@@ -1,20 +1,17 @@
-﻿@model NoStressWedding.Models.UserItem
+﻿@model Check_my_Box.Areas.DBManagement.Models.UserItem
 
-
-
+@Html.HiddenFor(model => model.UserItemId)
+@Html.HiddenFor(model => model.ItemValue.ItemValueId)
                     <tr>
                         <td>
                             
-                            @if (Model.ItemValue is NoStressWedding.Models.ItemTextValue) {
-                             //   @Html.EditorFor(model => Model.UserItems, (NoStressWedding.Models.ItemTextValue)(item.ItemValue));
-                             // @Html.RenderPartial"TextBoxValueView",   new ViewData(new {Key = "Some value"})  (NoStressWedding.Models.ItemTextValue)(item.ItemValue) );
-                            } else if (Model.ItemValue is NoStressWedding.Models.ItemSearchableValue) {
-                               //@Html.RenderPartial("ItemSearchableValueView",  (NoStressWedding.Models.ItemSearchableValue)(item.ItemValue) );
-                            } else if (Model.ItemValue is NoStressWedding.Models.ItemSelectableValue) {
-                                //@Html.RenderPartial("ItemSelectableValueView",  (((NoStressWedding.Models.ItemSelectableValue)(item.ItemValue)))); 
+                            @if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemTextValue) {
+                                 @Html.EditorFor(model => model.ItemValue, (Check_my_Box.Areas.DBManagement.Models.ItemTextValue)(Model.ItemValue))
+                            } else if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemSearchableValue) {
+                                 @Html.EditorFor(model => model.ItemValue, (Check_my_Box.Areas.DBManagement.Models.ItemSearchableValue)(Model.ItemValue))
+                            } else if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemSelectableValue) {
+                                 @Html.EditorFor(model => model.ItemValue, (Check_my_Box.Areas.DBManagement.Models.ItemSelectableValue)(Model.ItemValue))
                             }
-                        </td>
-                         <td>OK
                         </td>
                     </tr>
               
