@@ -16,7 +16,4 @@ namespace Check_my_Box.Areas.DBManagement.Models {
 		public virtual ICollection<UserItemList> UserItemLists { get; set; }
 	}
 
-	//public class UserContext: DbContext {
-	//  public DbSet<User> Users { get; set; }
-	//}
 }

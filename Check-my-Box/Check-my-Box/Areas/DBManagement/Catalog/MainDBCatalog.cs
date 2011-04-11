@@ -8,7 +8,7 @@ namespace Check_my_Box.Areas.DBManagement.Catalog {
 
 		public DbSet<AccomidationModel> AccomidationModels { get; set; }
 		public DbSet<AccomidationDetailModel> AccomidationDetailModels { get; set; }
-		public DbSet<Category> Categorys { get; set; }
+		public DbSet<Category> Categories { get; set; }
 		public DbSet<CategoryAttribute> CategoryAttributes { get; set; }
 		public DbSet<CategoryAttributeValue> CategoryAttributeValues { get; set; }
 		public DbSet<Item> Items { get; set; }
@@ -49,33 +49,7 @@ namespace Check_my_Box.Areas.DBManagement.Catalog {
 			modelBuilder.Entity<ItemSelectableValue>().ToTable("ItemSelectableValues");
 
 
-//			modelBuilder.Entity<Item>()
-	//	.Map<Item>(m => m.Requires("Type").HasValue("Current"))
-		//.Map<ItemSearchable>(m => m.Requires("Type").HasValue("Old")); 
 		}
-
-		/*
-		
-	protected override void OnModelCreating(DbModelBuilder modelBuilder){
-		modelBuilder.Entity<User>()
-.HasMany(s => s.UserItemLists)
-.WithMany()
-.Map(m => {
-	m.MapLeftKey(s => s., "UserId");
-	m.MapRightKey(r => r.ReportTypeID, "ReportType");
-	m.ToTable("T_SYSTEM_REPORT_TYPE_XREF");
-});
-
-    modelBuilder.Entity<User>()
-                .HasOptional(x => x.DefaultAirport)
-                .WithMany()
-                .HasForeignKey(n => n.DefaultAirportID);        
-	}
-
-*/
-
-
-
 
 	}
 }
