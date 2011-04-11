@@ -1,13 +1,10 @@
 ﻿@model Check_my_Box.Areas.DBManagement.Models.ItemSelectableValue
-
 @{
     ViewBag.Title = "ItemSelectableValue";
 }
-
 <div class="editor-label">
-                @Html.LabelFor(model => model.ItemSelectable.ItemName)
-            </div>
-            <div class="editor-label">
-                @Html.DropDownListFor(model => model.ItemSelectable.ListValues)
-            </div>
-
+    @Html.LabelFor(model => model.ItemSelectable.ItemName)
+</div>
+<div class="editor-label">
+    @Html.DropDownListFor(model => model.ItemSelectable.ListValues)
+</div>

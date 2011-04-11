@@ -1,17 +1,14 @@
 ﻿@model Check_my_Box.Areas.DBManagement.Models.UserItem
-
 @Html.HiddenFor(model => model.UserItemId)
 @Html.HiddenFor(model => model.ItemValue.ItemValueId)
-                    <tr>
-                        <td>
-                            
-                            @if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemTextValue) {
-                                 @Html.EditorFor(model => model.ItemValue, (Check_my_Box.Areas.DBManagement.Models.ItemTextValue)(Model.ItemValue))
-                            } else if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemSearchableValue) {
-                                 @Html.EditorFor(model => model.ItemValue, (Check_my_Box.Areas.DBManagement.Models.ItemSearchableValue)(Model.ItemValue))
-                            } else if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemSelectableValue) {
-                                 @Html.EditorFor(model => model.ItemValue, (Check_my_Box.Areas.DBManagement.Models.ItemSelectableValue)(Model.ItemValue))
-                            }
-                        </td>
-                    </tr>
-              
+<tr>
+    <td>
+        @if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemTextValue) {
+            @Html.EditorFor(model => model.ItemValue, (Check_my_Box.Areas.DBManagement.Models.ItemTextValue)(Model.ItemValue))
+        } else if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemSearchableValue) {
+            @Html.EditorFor(model => model.ItemValue, (Check_my_Box.Areas.DBManagement.Models.ItemSearchableValue)(Model.ItemValue))
+        } else if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemSelectableValue) {
+            @Html.EditorFor(model => model.ItemValue, (Check_my_Box.Areas.DBManagement.Models.ItemSelectableValue)(Model.ItemValue))
+        }
+    </td>
+</tr>

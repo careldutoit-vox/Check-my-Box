@@ -81,6 +81,7 @@
     <Compile Include="Areas\DBManagement\Controllers\ItemValueController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\SeacrhableElementController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\UserController.cs" />
+    <Compile Include="Areas\DBManagement\Controllers\UserItemController.cs" />
     <Compile Include="Areas\DBManagement\Controllers\UserItemListController.cs" />
     <Compile Include="Areas\DBManagement\DBManagementAreaRegistration.cs" />
     <Compile Include="Areas\DBManagement\Models\AccomidationDetailModel.cs" />
@@ -168,8 +169,6 @@
     <Folder Include="Areas\Authentication\Views\Shared\" />
     <Folder Include="Areas\DBManagement\Views\Shared\" />
     <Folder Include="Areas\Services\Views\Shared\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Shared\DisplayTemplates\" />
   </ItemGroup>
   <ItemGroup>
@@ -449,6 +448,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\DBManagement\Views\ItemSearchableValue\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\UserItem\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\UserItem\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\UserItem\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\UserItem\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\UserItem\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DBManagement\Views\UserItem\_CreateOrEdit.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
