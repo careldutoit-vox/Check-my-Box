@@ -1,0 +1,9 @@
+﻿@model Check_my_Box.Areas.DBManagement.Models.ItemTextValue
+@{
+    ViewBag.Title = "ItemTextValue";
+}
+@Html.HiddenFor(model => model.ItemValueId)
+<div class="editor-label">
+    @Html.Label(Model.ItemText.ItemName)
+    @Html.EditorFor(model => model.TextValue)
+</div>
