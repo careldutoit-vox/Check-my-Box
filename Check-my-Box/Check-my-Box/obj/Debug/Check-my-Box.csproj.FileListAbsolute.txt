@@ -6,3 +6,10 @@ C:\Development\Personal\Check-my-Box2 - Copy\Check-my-Box\Check-my-Box\bin\Entit
 C:\Development\Personal\Check-my-Box2 - Copy\Check-my-Box\Check-my-Box\bin\EntityFramework.xml
 C:\Development\Personal\Check-my-Box2 - Copy\Check-my-Box\Check-my-Box\obj\Debug\Check-my-Box.dll
 C:\Development\Personal\Check-my-Box2 - Copy\Check-my-Box\Check-my-Box\obj\Debug\Check-my-Box.pdb
+D:\PersonalDev\Check-my-Box\Check-my-Box\Check-my-Box\bin\Check-my-Box.dll
+D:\PersonalDev\Check-my-Box\Check-my-Box\Check-my-Box\bin\Check-my-Box.pdb
+D:\PersonalDev\Check-my-Box\Check-my-Box\Check-my-Box\bin\EntityFramework.dll
+D:\PersonalDev\Check-my-Box\Check-my-Box\Check-my-Box\bin\EntityFramework.xml
+D:\PersonalDev\Check-my-Box\Check-my-Box\Check-my-Box\obj\Debug\ResolveAssemblyReference.cache
+D:\PersonalDev\Check-my-Box\Check-my-Box\Check-my-Box\obj\Debug\Check-my-Box.dll
+D:\PersonalDev\Check-my-Box\Check-my-Box\Check-my-Box\obj\Debug\Check-my-Box.pdb
