@@ -1,0 +1,34 @@
+@model Check_my_Box.Areas.DBManagement.Models.ItemSearchableValue
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.PlaceHolder)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.PlaceHolder)
+    @Html.ValidationMessageFor(model => model.PlaceHolder)
+</div>
+
+<div class="editor-label">
+    ItemSearchable
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.ItemSearchableId, ((IEnumerable<Check_my_Box.Areas.DBManagement.Models.ItemSearchable>)ViewBag.PossibleItemSearchables).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.Id.ToString(),
+        Selected = (Model != null) && (option.Id == Model.ItemSearchableId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.ItemSearchableId)
+</div>
+<div class="editor-label">
+    SearchableElement
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.SearchableElementId, ((IEnumerable<Check_my_Box.Areas.DBManagement.Models.SearchableElement>)ViewBag.PossibleSearchableElements).Select(option => new SelectListItem {
+        Text = (option == null ? "None" : option.Name), 
+        Value = option.SearchableElementId.ToString(),
+        Selected = (Model != null) && (option.SearchableElementId == Model.SearchableElementId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.SearchableElementId)
+</div>

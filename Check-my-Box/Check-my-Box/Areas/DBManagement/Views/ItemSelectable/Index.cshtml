@@ -1,0 +1,41 @@
+@model IEnumerable<Check_my_Box.Areas.DBManagement.Models.ItemSelectable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            ItemName
+        </th>
+        <th>
+            ListOptions
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+        <td>
+			@item.ItemName
+        </td>
+        <td>
+			@(item.ListOptions == null ? "None" : item.ListOptions.Count.ToString())
+        </td>
+    </tr>
+}
+
+</table>
+
+

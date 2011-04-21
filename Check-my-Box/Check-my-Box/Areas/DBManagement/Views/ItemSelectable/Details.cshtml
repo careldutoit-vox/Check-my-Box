@@ -1,0 +1,23 @@
+@model Check_my_Box.Areas.DBManagement.Models.ItemSelectable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ItemSelectable</legend>
+
+    <div class="display-label">ItemName</div>
+    <div class="display-field">@Model.ItemName</div>
+
+    <div class="display-label">ListOptions</div>
+    <div class="display-field">@(Model.ListOptions == null ? "None" : Model.ListOptions.Count.ToString())</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

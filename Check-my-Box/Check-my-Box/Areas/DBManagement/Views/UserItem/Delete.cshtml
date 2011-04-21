@@ -1,0 +1,26 @@
+@model Check_my_Box.Areas.DBManagement.Models.UserItem
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>UserItem</legend>
+
+    <div class="display-label">ItemValue</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.ItemValue).ToString()</div>
+
+    <div class="display-label">ItemOrder</div>
+    <div class="display-field">@Model.ItemOrder</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

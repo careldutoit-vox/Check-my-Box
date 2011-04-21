@@ -1,0 +1,31 @@
+@model Check_my_Box.Areas.DBManagement.Models.ItemSelectableValue
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.PlaceHolder)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.PlaceHolder)
+    @Html.ValidationMessageFor(model => model.PlaceHolder)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.ListOptionValue)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.ListOptionValue)
+    @Html.ValidationMessageFor(model => model.ListOptionValue)
+</div>
+
+<div class="editor-label">
+    ItemSelectable
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.ItemSelectableId, ((IEnumerable<Check_my_Box.Areas.DBManagement.Models.ItemSelectable>)ViewBag.PossibleItemSelectables).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.Id.ToString(),
+        Selected = (Model != null) && (option.Id == Model.ItemSelectableId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.ItemSelectableId)
+</div>

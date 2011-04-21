@@ -1,0 +1,23 @@
+@model Check_my_Box.Areas.DBManagement.Models.ItemSearchable
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.ItemName)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.ItemName)
+    @Html.ValidationMessageFor(model => model.ItemName)
+</div>
+
+<div class="editor-label">
+    Category
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.CategoryId, ((IEnumerable<Check_my_Box.Areas.DBManagement.Models.Category>)ViewBag.PossibleCategories).Select(option => new SelectListItem {
+        Text = (option == null ? "None" : option.Name), 
+        Value = option.CategoryId.ToString(),
+        Selected = (Model != null) && (option.CategoryId == Model.CategoryId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.CategoryId)
+</div>

@@ -1,0 +1,23 @@
+@model Check_my_Box.Areas.DBManagement.Models.ItemSearchable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ItemSearchable</legend>
+
+    <div class="display-label">ItemName</div>
+    <div class="display-field">@Model.ItemName</div>
+
+    <div class="display-label">Category</div>
+    <div class="display-field">@(Model.Category == null ? "None" : Model.Category.Name)</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

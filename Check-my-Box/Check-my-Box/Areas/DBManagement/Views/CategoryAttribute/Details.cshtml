@@ -1,0 +1,20 @@
+@model Check_my_Box.Areas.DBManagement.Models.CategoryAttribute
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>CategoryAttribute</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.CategoryAttributeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

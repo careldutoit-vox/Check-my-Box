@@ -1,0 +1,23 @@
+@model Check_my_Box.Areas.DBManagement.Models.UserItem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>UserItem</legend>
+
+    <div class="display-label">ItemValue</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.ItemValue).ToString()</div>
+
+    <div class="display-label">ItemOrder</div>
+    <div class="display-field">@Model.ItemOrder</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.UserItemId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

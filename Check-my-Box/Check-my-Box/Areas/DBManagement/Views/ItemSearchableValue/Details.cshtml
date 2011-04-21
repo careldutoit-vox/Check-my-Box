@@ -1,0 +1,26 @@
+@model Check_my_Box.Areas.DBManagement.Models.ItemSearchableValue
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ItemSearchableValue</legend>
+
+    <div class="display-label">PlaceHolder</div>
+    <div class="display-field">@Model.PlaceHolder</div>
+
+    <div class="display-label">ItemSearchable</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.ItemSearchable).ToString()</div>
+
+    <div class="display-label">SearchableElement</div>
+    <div class="display-field">@(Model.SearchableElement == null ? "None" : Model.SearchableElement.Name)</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ItemValueId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

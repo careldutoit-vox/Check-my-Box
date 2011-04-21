@@ -1,0 +1,47 @@
+@model IEnumerable<Check_my_Box.Areas.DBManagement.Models.ItemSearchableValue>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            PlaceHolder
+        </th>
+        <th>
+            ItemSearchable
+        </th>
+        <th>
+            SearchableElement
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ItemValueId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ItemValueId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ItemValueId })
+        </td>
+        <td>
+			@item.PlaceHolder
+        </td>
+        <td>
+			@Html.DisplayTextFor(_ => item.ItemSearchable).ToString()
+        </td>
+        <td>
+			@(item.SearchableElement == null ? "None" : item.SearchableElement.Name)
+        </td>
+    </tr>
+}
+
+</table>
+
+
