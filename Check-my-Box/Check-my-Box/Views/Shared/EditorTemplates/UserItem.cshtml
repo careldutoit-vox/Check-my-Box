@@ -4,11 +4,12 @@
 <tr>
     <td>
         @if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemTextValue) {
-            @Html.EditorFor(model => model.ItemValue, (Check_my_Box.Areas.DBManagement.Models.ItemTextValue)(Model.ItemValue))
+            @Html.EditorFor(model => model.ItemValue, "ItemTextValue")
         } else if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemSearchableValue) {
-            @Html.EditorFor(model => model.ItemValue, (Check_my_Box.Areas.DBManagement.Models.ItemSearchableValue)(Model.ItemValue))
+            @Html.EditorFor(model => model.ItemValue, "ItemSearchableValue")
         } else if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemSelectableValue) {
-            @Html.EditorFor(model => model.ItemValue, (Check_my_Box.Areas.DBManagement.Models.ItemSelectableValue)(Model.ItemValue))
+            @Html.EditorFor(model => model.ItemValue,"ItemSelectableValue")
         }
     </td>
 </tr>
+

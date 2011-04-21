@@ -17,8 +17,8 @@ namespace Check_my_Box.Areas.DBManagement.Controllers
         //
         // GET: /UserItemList/
 
-        public ViewResult Index()
-        {
+        public ViewResult Index() {
+
             return View(context.UserItemLists.Include(useritemlist => useritemlist.UserItems).ToList());
         }
 
@@ -37,7 +37,7 @@ namespace Check_my_Box.Areas.DBManagement.Controllers
  {
 					if (ModelState.IsValid) {
 
-						useritemlist.UserOwner = context.UserItemLists.Single(x => x.UserItemListId == useritemlist.UserId).UserOwner;
+			//			useritemlist.UserOwner = context.UserItemLists.Single(x => x.UserItemListId == useritemlist.UserId).UserOwner;
 
 						useritemlist.UserItems = null;
 						context.Entry(useritemlist).State = EntityState.Modified;
