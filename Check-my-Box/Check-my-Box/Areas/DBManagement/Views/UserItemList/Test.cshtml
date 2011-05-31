@@ -14,17 +14,19 @@
             Owner
         </div>
         <div class="editor-field">
-            @Html.LabelFor(model => model.UserOwner.Name)
-        </div>b
-       @if (Model.UserItems.Count() >0){
+            @Html.EditorFor(model => model.UserOwner, "UserOwner")
+        </div>
+            @Html.EditorFor(model => model.UserItems)
+
+@*       @if (Model.UserItems.Count() >0){
            <div>C</div>
             foreach (var item in Model.UserItems) {    
                 <div class="editor-field">   a
-            @Html.EditorFor(items => item.,"UserItem")
+            @Html.EditorFor(items => item,"UserItem")
              </div>
             }
         }
-       
+       *@
         <p>
             <input type="submit" value="Save" />
         </p>

@@ -36,10 +36,6 @@ namespace Check_my_Box.Areas.DBManagement.Controllers
 					[Bind(Prefix = "UserItemList.UserItems")] UserItem[] userItems)
  {
 					if (ModelState.IsValid) {
-
-			//			useritemlist.UserOwner = context.UserItemLists.Single(x => x.UserItemListId == useritemlist.UserId).UserOwner;
-
-						useritemlist.UserItems = null;
 						context.Entry(useritemlist).State = EntityState.Modified;
 						context.SaveChanges();
 						return RedirectToAction("Index");

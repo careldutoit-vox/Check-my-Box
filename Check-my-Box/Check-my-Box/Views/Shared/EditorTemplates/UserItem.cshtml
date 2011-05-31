@@ -1,14 +1,17 @@
 ﻿@model Check_my_Box.Areas.DBManagement.Models.UserItem
+           
 @Html.HiddenFor(model => model.UserItemId)
 @Html.HiddenFor(model => model.ItemValue.ItemValueId)
 <tr>
     <td>
         @if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemTextValue) {
-            @Html.EditorFor(model => model.ItemValue, "ItemTextValue")
+                <div class="editor-label">
+             @Html.EditorFor((model => model.ItemValue),"ItemTextValue")
+    </div>
         } else if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemSearchableValue) {
             @Html.EditorFor(model => model.ItemValue, "ItemSearchableValue")
         } else if (Model.ItemValue is Check_my_Box.Areas.DBManagement.Models.ItemSelectableValue) {
-            @Html.EditorFor(model => model.ItemValue,"ItemSelectableValue")
+            @Html.EditorFor(model => model.ItemValue, "ItemSelectableValue")
         }
     </td>
 </tr>
