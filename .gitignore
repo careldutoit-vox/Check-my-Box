@@ -1,5 +1,5 @@
 *.resharper
-*resharper.user
+*.ReSharper.user
 _ReSharper.*/
 *.TeamCity.user
 *.Publish.xml
