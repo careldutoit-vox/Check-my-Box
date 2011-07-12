@@ -14,3 +14,10 @@ D:\PersonalDev\Check-my-Box\Check-my-Box\Check-my-Box\obj\Debug\ResolveAssemblyR
 D:\PersonalDev\Check-my-Box\Check-my-Box\Check-my-Box\obj\Debug\Check-my-Box.dll
 D:\PersonalDev\Check-my-Box\Check-my-Box\Check-my-Box\obj\Debug\Check-my-Box.pdb
 D:\Personal\Development\Check-my-Box\Check-my-Box\Check-my-Box\obj\Debug\ResolveAssemblyReference.cache
+D:\Personal\Development\Check-my-Box\Check-my-Box\Check-my-Box\bin\Check-my-Box.dll
+D:\Personal\Development\Check-my-Box\Check-my-Box\Check-my-Box\bin\Check-my-Box.pdb
+D:\Personal\Development\Check-my-Box\Check-my-Box\Check-my-Box\bin\EntityFramework.dll
+D:\Personal\Development\Check-my-Box\Check-my-Box\Check-my-Box\bin\Glimpse.Net.dll
+D:\Personal\Development\Check-my-Box\Check-my-Box\Check-my-Box\bin\EntityFramework.xml
+D:\Personal\Development\Check-my-Box\Check-my-Box\Check-my-Box\obj\Debug\Check-my-Box.dll
+D:\Personal\Development\Check-my-Box\Check-my-Box\Check-my-Box\obj\Debug\Check-my-Box.pdb

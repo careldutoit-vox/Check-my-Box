@@ -1,0 +1,26 @@
+-----------------------------------------------
+	UnInstall Package
+----------------------------------------------
+	To UnInstall the package and remove dependencies run the following command:
+	
+	UnInstall-Package Check_My_Box_Package -RemoveDependencies
+	
+	This will remove all package information and dependencies
+---------------------------------------------
+      EntityFramework 
+---------------------------------------------
+
+	This will install code first
+
+---------------------------------------------
+       Glimpse     
+---------------------------------------------
+	Using the Trace classes to set all information
+	I can turn Glimpse on with a Bookmarklet, but I like visiting 
+		http://localhost:portname/Glimpse/Config and pressing the big "Turn Glimpse On" button
+---------------------------------------------
+       MVCScaffolding     
+---------------------------------------------
+		Scaffold Controller UserArea -Area DBManagement
+		Scaffold Controller User -Area Services -ModelType NoStressWedding.Areas.DBManagement.Models.User
+
